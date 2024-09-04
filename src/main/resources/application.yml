@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: one-time-token-login
+  mail:
+    host: localhost
+    port: 1025
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
