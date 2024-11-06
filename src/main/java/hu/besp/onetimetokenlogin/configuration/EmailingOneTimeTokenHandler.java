@@ -8,13 +8,13 @@ import org.springframework.http.MediaType;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.authentication.ott.OneTimeToken;
-import org.springframework.security.web.authentication.ott.GeneratedOneTimeTokenHandler;
+import org.springframework.security.web.authentication.ott.OneTimeTokenGenerationSuccessHandler;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
 @Component
-public class EmailingOneTimeTokenHandler implements GeneratedOneTimeTokenHandler {
+public class EmailingOneTimeTokenHandler implements OneTimeTokenGenerationSuccessHandler {
 
     @Autowired
     JavaMailSender javaMailSender;

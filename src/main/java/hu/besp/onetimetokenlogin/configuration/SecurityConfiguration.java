@@ -54,8 +54,7 @@ public class SecurityConfiguration {
                                     OneTimeTokenLoginConfigurer<HttpSecurity> configurer
                             ) {
                                 configurer
-                                        .generatedOneTimeTokenHandler(
-                                                emailingOneTimeTokenHandler);
+                                        .tokenGenerationSuccessHandler(emailingOneTimeTokenHandler);
                             }
                         })
                 .build();
