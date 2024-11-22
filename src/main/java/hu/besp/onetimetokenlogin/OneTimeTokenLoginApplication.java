@@ -10,6 +10,4 @@ public class OneTimeTokenLoginApplication {
     public static void main(String[] args) {
         SpringApplication.run(OneTimeTokenLoginApplication.class, args);
     }
-
-    // TODO change to mainline spring-security if in mainline (Spring Boot 3.4, November 2024)
 }
